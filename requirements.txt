@@ -1,0 +1,8 @@
+schedule
+requests
+yfinance
+webull
+pandas_ta
+simpleaudio
+twilio
+pandas
