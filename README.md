@@ -2,6 +2,7 @@
 <br>
 Note: Don't share any API key, secret key, or password.
 <br>
+
 Install requirements: run in cmd under root directory: `pip install -r requirements.txt`
 
 Install MooMoo/Futu OpenD: https://www.moomoo.com/download/OpenAPI
