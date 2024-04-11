@@ -4,7 +4,10 @@ Note: Don't share any API key, secret key, or password.
 <br>
 Install requirements: run in cmd under root directory: `pip install -r requirements.txt`
 
-<br>
+Install MooMoo/Futu OpenD: https://www.moomoo.com/download/OpenAPI
+Office Docs for OpenD: https://openapi.moomoo.com/moomoo-api-doc/en/quick/opend-base.html
+
+Recommended to open with PyCharm, download and install: https://www.jetbrains.com/products/compare/?product=pycharm&product=pycharm-ce
 
 <br>
 

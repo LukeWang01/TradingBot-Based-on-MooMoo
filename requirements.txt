@@ -6,3 +6,4 @@ pandas_ta
 simpleaudio
 twilio
 pandas
+moomoo-api
