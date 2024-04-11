@@ -8,7 +8,7 @@ Note:
 
 - Install MooMoo/Futu OpenD: https://www.moomoo.com/download/OpenAPI
 
-- Office Docs for OpenD: https://openapi.moomoo.com/moomoo-api-doc/en/quick/opend-base.html
+- Official Docs for OpenD: https://openapi.moomoo.com/moomoo-api-doc/en/quick/opend-base.html
 
 - Recommended to open with PyCharm, download and install: https://www.jetbrains.com/products/compare/?product=pycharm&product=pycharm-ce
 
