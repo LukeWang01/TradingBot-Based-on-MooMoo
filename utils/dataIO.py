@@ -116,28 +116,6 @@ def print_current_time():
     print(get_current_time())
 
 
-def is_market_hours():
-    current_time = datetime.datetime.now().time()
-    market_open_time = datetime.time(9, 30)  # Regular market open time (9:30 AM)
-    market_close_time = datetime.time(16, 0)  # Regular market close time (4:00 PM)
-
-    if market_open_time <= current_time <= market_close_time:
-        return True
-    else:
-        return False
-
-
-def is_market_and_extended_hours():
-    current_time = datetime.datetime.now().time()
-    trade_open_time = datetime.time(4, 0)  # Regular market open time (4:00 AM)
-    trade_close_time = datetime.time(20, 0)  # Regular market close time (20:00 PM)
-
-    if trade_open_time <= current_time <= trade_close_time:
-        return True
-    else:
-        return False
-
-
 def read_json_file(file_path):
     if os.path.exists(file_path):
         with open(file_path, 'r') as file:

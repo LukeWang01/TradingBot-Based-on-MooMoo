@@ -28,7 +28,7 @@ from env._secrete import your_channel_id
 from strategy.Strategy import Strategy
 import pandas_ta as pta
 from utils import play_sound
-from utils.dataIO import is_market_hours, read_json_file, write_json_file, get_current_time, logging_info
+from utils.dataIO import read_json_file, write_json_file, get_current_time, logging_info
 
 
 class Your_Strategy(Strategy):
