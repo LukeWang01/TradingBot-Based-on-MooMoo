@@ -7,3 +7,4 @@ simpleaudio
 twilio
 pandas
 moomoo-api
+pandas_market_calendars
