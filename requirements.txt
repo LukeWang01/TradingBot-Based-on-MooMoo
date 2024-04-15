@@ -3,8 +3,8 @@ requests
 yfinance
 webull
 pandas_ta
-simpleaudio
 twilio
 pandas
 moomoo-api
 pandas_market_calendars
+pydub

@@ -48,6 +48,9 @@ SECURITY_FIRM = SecurityFirm.FUTUINC
 # FUTUAU = 'FUTUAU'
 
 
+FILL_OUTSIDE_MARKET_HOURS = True    # enable if order fills on extended hours
+
+
 # Trader class:
 class Trader:
     def __init__(self, name='Your Trader Name'):
@@ -114,7 +117,7 @@ class Trader:
             code = f'US.{stock}'
             ret, data = self.trade_context.place_order(price=price, qty=quantity, code=code, trd_side=TrdSide.SELL,
                                                        order_type=OrderType.NORMAL, trd_env=TRADING_ENVIRONMENT,
-                                                       fill_outside_rth=True)
+                                                       fill_outside_rth=FILL_OUTSIDE_MARKET_HOURS)
             if ret != RET_OK:
                 print('Trader: Limit Sell failed: ', data)
                 self.close_context()
@@ -134,7 +137,7 @@ class Trader:
             code = f'US.{stock}'
             ret, data = self.trade_context.place_order(price=price, qty=quantity, code=code, trd_side=TrdSide.BUY,
                                                        order_type=OrderType.NORMAL, trd_env=TRADING_ENVIRONMENT,
-                                                       fill_outside_rth=True)
+                                                       fill_outside_rth=FILL_OUTSIDE_MARKET_HOURS)
             if ret != RET_OK:
                 print('Trader: Limit Buy failed: ', data)
                 self.close_context()
