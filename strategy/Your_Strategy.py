@@ -43,13 +43,17 @@ class Your_Strategy(Strategy):
 
         """⬇️⬇️⬇️ Strategy Settings ⬇️⬇️⬇️"""
 
-        self.stock_tracking_list = ["SOXL", "TQQQ", "BITO"]
-        self.stock_trading_list = ["SOXL", "TQQQ"]
+        self.stock_tracking_list = ["SPY", "QQQ", "AAPL", "MSFT"]
+        self.stock_trading_list = ["SPY", "QQQ"]
 
         # self.cash_balance = 0
         self.strategy_market_value = 0
         self.strategy_market_limit = 9999
         self.strategy_cash_threshold = 9999
+
+        # set the trading settings for the strategy
+        self.enable_buy = True
+        self.enable_sell = True
 
         """⬆️⬆️⬆️ Strategy Settings ⬆️⬆️⬆️"""
 
@@ -84,7 +88,7 @@ class Your_Strategy(Strategy):
 
             # 3. check the strategy condition,
             # For this example, simply buy when rsi < 30, sell when rsi > 70
-            if pre_rsi < 30:
+            if pre_rsi < 30 and self.enable_buy:
                 print('buy point start')
                 ret, data = self.trader.limit_buy(stock, qty, price)
                 if ret == RET_OK:
@@ -99,7 +103,7 @@ class Your_Strategy(Strategy):
                     logging_info(f'place_order error, {data}')
                     # self.send_notification_via_discord(data, channel_id_dev_bot)
 
-            elif pre_rsi > 70:
+            elif pre_rsi > 70 and self.enable_sell:
                 print('sell point start')
                 ret, data = self.trader.limit_sell(stock, qty, price)
                 if ret == RET_OK:
