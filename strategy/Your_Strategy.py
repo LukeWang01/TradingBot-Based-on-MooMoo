@@ -97,6 +97,8 @@ class Your_Strategy(Strategy):
                     self.save_order_history(data, 'strategy_decision')
                     self.update_strategy_position('success', stock, price, qty, 'BUY')
                     play_sound.order_placed()
+                    self.enable_buy = False
+                    self.enable_sell = True
                 else:
                     # order failed
                     print(f"{get_current_time()}: place_order error, {data}")
@@ -112,6 +114,8 @@ class Your_Strategy(Strategy):
                     self.save_order_history(data, 'strategy_decision')
                     self.update_strategy_position('success', stock, price, qty, 'SELL')
                     play_sound.order_placed()
+                    self.enable_buy = True
+                    self.enable_sell = False
                 else:
                     print(f"{get_current_time()}: place_order error, {data}")
                     logging_info(f'place_order error, {data}')
