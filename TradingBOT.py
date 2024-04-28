@@ -17,7 +17,7 @@ from discord_bot.discord_notify_human import send_msg_to_discord_request
 from env._secrete import MooMoo_PWD
 from strategy.Your_Strategy import Your_Strategy
 from utils.dataIO import get_current_time, print_current_time, logging_info
-from utils.time_tool import check_if_weekday, is_market_and_extended_hours
+from utils.time_tool import check_if_weekday, is_market_and_extended_hours, is_trading_day
 
 # Environment Variables
 MOOMOOOPEND_ADDRESS = "127.0.0.1"  # be same as the OpenD host IP
@@ -223,11 +223,11 @@ if __name__ == '__main__':
     # loop and keep the schedule running
     while True:
         bkg_task.run_pending()
-        if is_market_and_extended_hours() and check_if_weekday():
+        if is_market_and_extended_hours() and is_trading_day():
             try:
                 bot_task.run_pending()
             except Exception as e:
-                print(get_current_time(), 'Error in the strategy loop:', e)
+                print(get_current_time(), 'Error in the strategy:', e)
                 # uncomment the code below to send error message to discord
                 # send_msg_to_discord_request(f"Bot Error, Fix ASAP: {e}", channel_id=channel_id_dev_bot)
                 time.sleep(1)
