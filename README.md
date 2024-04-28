@@ -1,18 +1,24 @@
 # TradingBot Based on MooMoo/Futu
 <br>
+
 Note: 
 
 - Don't share any API key, secret key, or password.
+- Any questions, please contact: `Discord/Wechat ID: squawkwallstreet`.
+
+<br>
+
+Prerequisite:
+
+- Install Python: https://www.python.org/downloads/
 
 - Install requirements: run in cmd under root directory: `pip install -r requirements.txt`
 
 - Install MooMoo/Futu OpenD: https://www.moomoo.com/download/OpenAPI
 
-- Official Docs for OpenD: https://openapi.moomoo.com/moomoo-api-doc/en/quick/opend-base.html
+- PyCharm (Recommended), download and install: https://www.jetbrains.com/products/compare/?product=pycharm&product=pycharm-ce
 
-- Recommended to open with PyCharm, download and install: https://www.jetbrains.com/products/compare/?product=pycharm&product=pycharm-ce
 
-- Any questions, please contact: `Discord/Wechat ID: squawkwallstreet`.
 
 <br>
 
