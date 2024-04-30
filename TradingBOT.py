@@ -163,7 +163,7 @@ class Trader:
             acct_info = {
                 'cash': round(data["cash"][0], 2),
                 'total_assets': round(data["total_assets"][0], 2),
-                'market_value': round(data["market_value"][0], 2),
+                'market_value': round(data["market_val"][0], 2),
             }
             self.close_context()
             logging_info('Trader: Get Account Info success!')
