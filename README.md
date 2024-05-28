@@ -42,6 +42,11 @@ Prerequisite:
 
 <br>
 
+#### Discord Server for program trading:
+https://discord.gg/9uUpjyyqkZ
+
+or, just add me on Discord. My Discord ID: squawkwallstreet
+
 <br>
 
 ## 🦋 Supporting Me
