@@ -40,9 +40,17 @@ Prerequisite:
 
 <br>
 
+#### Don't have MooMoo Account?
+Feel free to use the link below to get a MooMoo account, 0 fees for most tradings. We both can get some free stocks. 💰
+<br>
+
+https://j.moomoo.com/011Pu5
+
 <br>
 
 #### Discord Server for program trading:
+
+
 https://discord.gg/9uUpjyyqkZ
 
 or, just add me on Discord. My Discord ID: squawkwallstreet
