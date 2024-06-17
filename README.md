@@ -61,6 +61,21 @@ or, just add me on Discord. My Discord ID: squawkwallstreet
 
 <br>
 
+#### TradingBOT of My Strategy, for preview:
+(Please feel free to develop your own strategy under `strategy/Your_Strategy.py`)
+
+<br>
+
+<img src="https://github.com/LukeWang01/TradingBot-Based-on-MooMoo/assets/25569658/9ceafb89-07c3-45ec-b58f-33904c4c2ef2" alt="image" width="800">
+
+
+<br>
+
+<br>
+
+<img src="https://github.com/LukeWang01/TradingBot-Based-on-MooMoo/assets/25569658/cf5740eb-8270-4352-9e70-72e5e734746a" alt="image" width="800">
+
+
 ## 🦋 Supporting Me
 
 <br>
