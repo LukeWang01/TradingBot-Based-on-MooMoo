@@ -53,6 +53,10 @@ https://j.moomoo.com/011Pu5
 
 https://discord.gg/9uUpjyyqkZ
 
+#### Discord Server for tradingBOT, SOXL, TQQQ, BTC:
+
+https://discord.gg/CX47rMVZdT
+
 or, just add me on Discord. My Discord ID: squawkwallstreet
 
 <br>
